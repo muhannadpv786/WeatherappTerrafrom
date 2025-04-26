@@ -5,6 +5,6 @@ private_subnet_cidr = "10.0.2.0/24"
 key_name           = "testhp"
 jump_instance_type = "t3.xlarge"
 db_instance_type   = "t2.small"
-cluster_name       = "eks-cluster"
+cluster_name       = "muhannad-cluster"
 ecr_repo_name      = "frontend"       # Explicitly set if needed
 iam_role_arn       = "arn:aws:iam::279707218273:user/muhannad"
