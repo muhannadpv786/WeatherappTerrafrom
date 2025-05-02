@@ -5,7 +5,15 @@ terraform {
       version = "~> 4.0"
     }
   }
+
+backend "s3" {
+    bucket         = "muhannadbucket123"
+    key            = "terraform.tfstate"
+    region         = "ap-south-1"
+    encrypt        = true
+  }
 }
+
 
 provider "aws" {
   region = var.region
